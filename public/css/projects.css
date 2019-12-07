@@ -1,0 +1,125 @@
+.projects-box {
+    color: #313437;
+    background-color: #b5bbc1;
+}
+
+.projects-box p {
+    color: #53585a;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+.projects-box h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+}
+
+@media (max-width:767px) {
+    .projects-box h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+
+.projects-box .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.projects-box .intro p {
+    margin-bottom: 0;
+}
+
+.projects-box .features {
+    padding-bottom: 50PX;
+}
+
+.projects-box .item {
+    text-align: center;
+    padding: 15PX;
+}
+
+@media (max-width:767px) {
+    .projects-box .item {
+        padding-top: 40px;
+        min-height: 160px;
+    }
+}
+
+.projects-box .item .box {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.projects-box .item .icon {
+    font-size: 60px;
+    color: #1485ee;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.projects-box .item .name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    color: inherit;
+}
+
+@media (max-width:991px) {
+    .projects-horizontal .item .name {
+        margin-top: 22px;
+    }
+}
+
+.projects-box .item .description {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#project-card:hover {
+    transform: scale(1.1);
+}
+
+#project-card {
+    transition: transform .3s;
+}
+
+#project-card p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+.btn-group button {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-size: inherit;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+    text-shadow: none;
+    padding: .5rem 1rem;
+    transition: background-color 0.25s;
+}
+
+.btn-group button:active {
+    transform: scale(0.95);
+}
+
+.btn-group button:focus {
+    outline: none;
+}
