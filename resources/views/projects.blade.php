@@ -24,14 +24,14 @@
                             <h6 class="card-subtitle mb-2" style="margin-top: 0px; color: #7d8285">{{ $project['type'] }}</h6>
                             <p class="card-text" style="margin-top: 15px;margin-bottom: 20px;">{{ $project['desc'] }}<br></p>
                             <div class="btn-group" role="group">
-                                @if(isset($project['github']) && $project['github'] != "")
-                                    <button class="btn btn-primary" data-bs-hover-animate="pulse" type="button" style="background-color: rgb(72,72,72);">
-                                        <a href="{{ $project['github'] }}" style="background-color: inherit;color: inherit;text-decoration: inherit;">GITHUB<br></a>
+                                @if(isset($project['info']) && $project['info'] != "")
+                                    <button class="btn btn-primary btn-secondary" data-bs-hover-animate="pulse" type="button" style="background-color: rgb(213,76,17);">
+                                        <a href="{{ $project['info'] }}" style="background-color: inherit;color: inherit;text-decoration: inherit;">Info / <i class="fas fa-download"></i></a>
                                     </button>
                                 @endif
-                                @if(isset($project['info']) && $project['info'] != "")
-                                    <button class="btn btn-primary btn-secondary" data-bs-hover-animate="pulse" type="button" style="margin-left: 7px;background-color: rgb(213,76,17);">
-                                        <a href="{{ $project['info'] }}" style="background-color: inherit;color: inherit;text-decoration: inherit;">Info / <i class="fas fa-download"></i></a>
+                                @if(isset($project['github']) && $project['github'] != "")
+                                    <button class="btn btn-primary" data-bs-hover-animate="pulse" type="button" style="margin-left: 7px; background-color: rgb(72,72,72);">
+                                        <a href="{{ $project['github'] }}" style="background-color: inherit;color: inherit;text-decoration: inherit;">GITHUB<br></a>
                                     </button>
                                 @endif
                             </div>

@@ -22,3 +22,5 @@ Route::post('/contact', 'ContactController@send');
 Route::get('/projects', function () {
     return view('projects');
 });
+
+Route::get('/projects/{project}', 'ProjectController@project');

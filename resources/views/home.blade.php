@@ -36,7 +36,7 @@
                     <h2 class="text-center">Want to contact me ?</h2>
                     <p class="text-center">The best way is to join my discord ! Else you can use the <a href="/contact">contact form</a>.</p>
                 </div>
-                <div class="buttons"><a class="btn btn-primary" role="button" href="{{ config('social_links.discord') }}" style="font-size: 16px;"><i class="fab fa-discord" style="font-size: 16px;"></i><strong>&nbsp;DISCORD SERVER</strong><br></a></div>
+                <div class="buttons"><a class="btn btn-primary" role="button" href="{{ config('links.discord') }}" style="font-size: 16px;"><i class="fab fa-discord" style="font-size: 16px;"></i><strong>&nbsp;DISCORD SERVER</strong><br></a></div>
             </div>
         </div>
     @include('include.footer')

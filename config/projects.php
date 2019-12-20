@@ -4,10 +4,16 @@ return [
     [
         'name' => 'Minecraft2Discord',
         'type' => 'Minecraft Mod',
-        'img' => 'img/projects/minecraft2discord.png',
+        'img' => 'img/projects/minecraft2discord/logo.png',
         'desc' => 'A simple minecraft mod, server side only, to link the minecraft chat with your Discord server.',
         'github' => 'https://github.com/Denis3d/Minecraft2Discord',
-        'info' => 'https://www.curseforge.com/minecraft/mc-mods/minecraft2discord',
+        'info' => '/projects/minecraft2discord/',
+        'curseforge' => 'https://www.curseforge.com/minecraft/mc-mods/minecraft2discord',
+        'versions' => [
+            '1.15.1' => 'http://vault.denisd3d.cf/minecraft2discord/1.15.1/minecraft2discord-1.15.1-1.1.0.jar',
+            '1.14.4' => 'http://vault.denisd3d.cf/minecraft2discord/1.15.1/minecraft2discord-1.14.4-1.1.0.jar',
+            '1.14.3' => 'http://vault.denisd3d.cf/minecraft2discord/1.15.1/minecraft2discord-1.14.3-1.0.3.jar',
+        ]
     ],
     [
         'name' => 'Tabs4Survival',

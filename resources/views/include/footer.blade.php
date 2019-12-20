@@ -3,10 +3,10 @@
         <div class="container">
             <div class="row">
                 <div class="col item social">
-                    <a href="{{ config('social_links.github') }}"><i class="icon ion-social-github"></i></a>
-                    <a href="{{ config('social_links.twitter') }}"><i class="icon ion-social-twitter"></i></a>
-                    <a href="{{ config('social_links.discord') }}"><i class="fab fa-discord"></i></a>
-                    <a href="{{ config('social_links.mail') }}"><i class="fas fa-envelope"></i></a>
+                    <a href="{{ config('links.github') }}"><i class="icon ion-social-github"></i></a>
+                    <a href="{{ config('links.twitter') }}"><i class="icon ion-social-twitter"></i></a>
+                    <a href="{{ config('links.discord') }}"><i class="fab fa-discord"></i></a>
+                    <a href="{{ config('links.mail') }}"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
             <p class="copyright">DenisD3D © 2020</p>
