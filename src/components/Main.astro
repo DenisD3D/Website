@@ -1,0 +1,43 @@
+---
+import {getLangFromUrl, useTranslations} from '../i18n/utils';
+
+import Navigation from "./Navigation.astro";
+import Card from "./Card.astro";
+
+import settings from "../data/settings.json";
+
+function getAge(dateString: string) {
+    const today = new Date();
+    const birthDate = new Date(dateString);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+<main class="bg-background-950 flex justify-center w-screen md:h-screen text-white py-20">
+    <Navigation/>
+    <div class="text-center px-10 my-auto">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl">Denis Daviaud</h1>
+        <p class="mb-6 text-lg font-normal text-gray-300 lg:text-xl">{getAge(settings.birth_date) + t("description")}</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {settings.links.map((card) => (
+                    <Card text={card["text_" + lang] ?? card.text} href={card.href} icon={card.icon}/>
+            ))}
+        </div>
+        <p class="inline-block mt-4 text-lg font-medium text-white">{t("cv")}</p>
+
+        <h2 class="mt-20 mb-8 text-2xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-4xl">Mes projets</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {settings.projects.map((card) => (
+                    <Card text={card["text_" + lang] ?? card.text} href={card.href} icon={card.icon}/>
+            ))}
+        </div>
+        <a href={settings.github} class="inline-block mt-4 text-lg font-medium text-white hover:text-gray-300 underline">{t("view_all_projects")}</a>
+    </div>
+</main>

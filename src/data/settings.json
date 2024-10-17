@@ -1,0 +1,49 @@
+{
+    "github": "https://github.com/DenisD3D",
+    "birth_date": "2002/07/14",
+    "links": [
+        {
+            "text": "GitHub",
+            "href": "https://github.com/DenisD3D",
+            "icon": "lucide:github"
+        },
+        {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/denis-daviaud/",
+            "icon": "lucide:linkedin"
+        },
+        {
+            "text": "Mail",
+            "href": "mailto:contact@denisd3d.fr",
+            "icon": "lucide:mail"
+        },
+        {
+            "text": "Discord - @denisd3d",
+            "href": "https://discord.gg/D3qEDqmKvy",
+            "icon": "lucide:mail"
+        }
+    ],
+    "projects": [
+        {
+            "text": "Mc2Discord",
+            "href": "https://github.com/DenisD3D/Mc2Discord",
+            "icon": "lucide:box"
+        },
+        {
+            "text_fr": "Coupe de France de robotique",
+            "text_en": "French Robotics Cup",
+            "href": "https://github.com/Tactinsa",
+            "icon": "lucide:bot"
+        },
+        {
+            "text": "CarbonScaleApp",
+            "href": "https://carbonscale.app",
+            "icon": "lucide:smartphone"
+        },
+        {
+            "text": "SnakeQT",
+            "href": "https://github.com/DenisD3D/SnakeQT",
+            "icon": "lucide:gamepad-2"
+        }
+    ]
+}

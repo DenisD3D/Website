@@ -1,0 +1,39 @@
+---
+import {getLangFromUrl} from '../i18n/utils';
+
+import {languages} from "../i18n/ui";
+import {Icon} from "astro-icon/components";
+
+const lang = getLangFromUrl(Astro.url);
+---
+<nav class="absolute top-0 right-0 left-0">
+    <div class="max-w-screen-xl flex flex-wrap flex-row-reverse items-center justify-between mx-auto p-4">
+        <div class="flex items-center md:order-2 space-x-1 md:space-x-0">
+            <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex w-32 items-center font-medium justify-center px-4 py-2 text-sm text-white rounded-lg cursor-pointer hover:bg-background-800 active:bg-background-700">
+                <Icon name={"circle-flags:" + lang} class="w-5 h-5 rounded-full me-3" aria-hidden="true"/>
+                {languages[lang]}
+            </button>
+            <!-- Dropdown -->
+            <div class="z-50 hidden my-4 text-base list-none bg-background-950 border border-background-800 divide-y divide-gray-100 rounded-lg shadow w-32" id="language-dropdown-menu">
+                <ul class="font-medium" role="none">
+                    {Object.entries(languages).map(([lang, label]) => (
+                            <li class="first:rounded-t last:rounded-b overflow-hidden">
+                                <a href={`/${lang}/`} class="block px-4 py-2 text-sm text-white hover:bg-background-800 active:bg-background-700" role="menuitem">
+                                    <div class="inline-flex items-center">
+                                        <Icon name={"circle-flags:" + lang} class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"/>
+                                        {label}
+                                    </div>
+                                </a>
+                            </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    import {initDropdowns} from 'flowbite'
+
+    initDropdowns();
+</script>

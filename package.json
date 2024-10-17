@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "denisd3d-website",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.14.5"
+    "@astrojs/tailwind": "^5.1.0",
+    "@iconify-json/lucide": "^1.2.10",
+    "@iconify-json/circle-flags": "^1.1.49",
+    "astro": "^4.16.6",
+    "astro-icon": "^1.1.1",
+    "astro-meta-tags": "^0.3.0",
+    "flowbite": "^2.5.1",
+    "tailwindcss": "^3.4.10"
   }
 }
